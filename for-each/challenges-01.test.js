@@ -48,10 +48,10 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-//   arr.forEach( (times) => {
-//     callback();
-//   })
-//   return arr;
+  for (let i=0; i < times; i++) {
+    callback(arr, num)
+}
+return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,10 +75,10 @@ const removeOne = (num, arr) => {
 
 const removeElements = (arr, callback) => {
   // Solution code here...
-//   arr.forEach( arr => {
-//       callback();
-//   })
-//   return arr;
+ for (let i = 0; i < arr.length; i++) {
+  callback(arr[i], arr);
+ }
+return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
