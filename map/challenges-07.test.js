@@ -51,9 +51,7 @@ For example: charCode(['h','i']) returns [104, 105].
 
 const charCode = (arr) => {
     // Solution code here...
-  let chars = [];
-
-  chars = arr.map( x => x.charCodeAt());
+  let chars = arr.map( x => x.charCodeAt());
   return chars;
 };
 
@@ -165,7 +163,8 @@ const extractStats = (arr) => {
   // Solution code here...
   return arr.map(stats => {
     return {name: stats.stat.name, total: (stats.effort + stats.baseStat)};
-  });};
+  });
+};
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
